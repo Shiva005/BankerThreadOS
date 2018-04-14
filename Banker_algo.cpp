@@ -1,12 +1,12 @@
 
 #include<iostream>
 using namespace std;
-void calculateNeed(int need[5][4], int maxm[5][4],int alloc[5][4])
+void calculateNeed(int need[5][4], int max[5][4],int alloc[5][4])
 {		  
 	int i,j; 
     for (i = 0 ; i < 5 ; i++)
         for (j = 0 ; j < 4 ; j++)
-            need[i][j] = maxm[i][j] - alloc[i][j];
+            need[i][j] = max[i][j] - alloc[i][j];
     
     printf("\n\n  The NEED Matrix is :\n\n");
     for (int i = 0 ; i < 5 ; i++)
@@ -20,10 +20,10 @@ void calculateNeed(int need[5][4], int maxm[5][4],int alloc[5][4])
             
         
 }
-bool checkSafety(int processes[], int avail[], int maxm[][4],int alloc[][4])
+bool checkSafety(int processes[], int avail[], int max[][4],int alloc[][4])
 {
     int need[5][4];
-    calculateNeed(need, maxm, alloc);
+    calculateNeed(need, max, alloc);
     bool finish[5] = {0};
     int safeSeq[5];
     int work[4];

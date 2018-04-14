@@ -2,17 +2,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include<unistd.h>
 
 int prime_arr[50];
 void *prime()
 {
-	int start,end,i,j,k=0,count=0;
-	printf("Enter the start number to calculate prime : ");
-	scanf("%d",&start);
-	printf("Enter the end number to calculate prime : ");
-	scanf("%d",&end);
-	for(i=start;i<=end;i++)
+	int init,finish,i,j,k=0,count=0;
+	printf("Enter the starting number to calculate prime : ");
+	scanf("%d",&init);
+	printf("Enter the Ending number to calculate prime : ");
+	scanf("%d",&finish);
+	for(i=init;i<=finish;i++)
 	{
 		for(j=2;j<i;j++)
 		{
