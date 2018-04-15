@@ -1,5 +1,5 @@
-
 #include<iostream>
+
 using namespace std;
 void calculateNeed(int need[5][4], int max[5][4],int alloc[5][4])
 {		  
@@ -17,8 +17,6 @@ void calculateNeed(int need[5][4], int max[5][4],int alloc[5][4])
 		}
 		printf("\n"); 
 	}
-            
-        
 }
 bool checkSafety(int processes[], int avail[], int max[][4],int alloc[][4])
 {
